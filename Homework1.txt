@@ -1,0 +1,177 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Homework1
+{
+    internal class Program
+    {
+
+        /* 1.1
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the temperature in Celsius:");
+            int temperature = Convert.ToInt32(Console.ReadLine());
+
+            if (temperature < 0)
+            {
+                Console.WriteLine("Freezing weather.");
+            }
+            else if (temperature >= 0 && temperature < 10)
+            {
+                Console.WriteLine("Cold weather.");
+            }
+            else if (temperature >= 10 && temperature < 20)
+            {
+                Console.WriteLine("Cool weather.");
+            }
+            else if (temperature >= 20 && temperature < 30)
+            {
+                Console.WriteLine("Moderate weather.");
+            }
+            else
+            {
+                Console.WriteLine("Warm weather.");
+            }
+        }
+    
+        */
+
+
+        /*1.2
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter your age:");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            if (age < 13)
+            {
+                Console.WriteLine("Child");
+            }
+            else if (age >= 13 && age <= 19)
+            {
+                Console.WriteLine("Teenager");
+            }
+            else
+            {
+                Console.WriteLine("Adult");
+            }
+        }
+
+        */
+
+
+        /*1.3
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Choose conversion direction:");
+            Console.WriteLine("1. Celsius to Fahrenheit");
+            Console.WriteLine("2. Fahrenheit to Celsius");
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            if (choice == 1)
+            {
+                Console.WriteLine("Enter temperature in Celsius:");
+                double celsius = Convert.ToDouble(Console.ReadLine());
+                double fahrenheit = (celsius * 9 / 5) + 32;
+                Console.WriteLine($"Temperature in Fahrenheit: {fahrenheit}");
+            }
+            else if (choice == 2)
+            {
+                Console.WriteLine("Enter temperature in Fahrenheit:");
+                double fahrenheit = Convert.ToDouble(Console.ReadLine());
+                double celsius = (fahrenheit - 32) * 5 / 9;
+                Console.WriteLine($"Temperature in Celsius: {celsius}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid choice.");
+            }
+        }
+
+
+        */
+
+
+
+        /* 2.1
+        static void Main(string[] args)
+        {
+            int[] array = { 5, 2, 7, 1, 9, 3 };
+
+            int min = array[0];
+            int max = array[0];
+
+            foreach (int num in array)
+            {
+                if (num < min)
+                    min = num;
+
+                if (num > max)
+                    max = num;
+            }
+
+            Console.WriteLine("Min: " + min);
+            Console.WriteLine("Maxi: " + max);
+        }
+
+        */
+
+
+
+
+        /* 2.2
+        static void Main(string[] args)
+        {
+            int[] array = { 1, 2, 3, 4, 5 };
+
+            Array.Reverse(array);
+
+            Console.WriteLine("reverse");
+            foreach (int num in array)
+            {
+                Console.Write(num + " ");
+            }
+        }
+        */
+
+
+        /*2.3
+        static void Main(string[] args)
+        {
+            int[] array = { 5, 2, 7, 1, 9, 3 };
+
+            Array.Sort(array);
+
+            Console.WriteLine("second biggest " + array[array.Length - 2]);
+        }
+
+        */
+
+        /* 2.4
+        static void Main(string[] args)
+        {
+            int[] array1 = { 1, 2, 3 };
+            int[] array2 = { 4, 5, 6 };
+
+            int[] sumArray = new int[array1.Length];
+
+            for (int i = 0; i < array1.Length; i++)
+            {
+                sumArray[i] = array1[i] + array2[i];
+            }
+
+            Console.WriteLine("sum");
+            foreach (int num in sumArray)
+            {
+                Console.Write(num + " ");
+            }
+        }
+
+        */
+    }
+}
